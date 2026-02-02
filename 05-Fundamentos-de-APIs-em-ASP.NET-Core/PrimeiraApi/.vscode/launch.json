@@ -1,0 +1,11 @@
+{    
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "C#: Iniciar Projeto de Inicialização",
+            "type": "dotnet",
+            "request": "launch"
+        }
+    ]
+}
