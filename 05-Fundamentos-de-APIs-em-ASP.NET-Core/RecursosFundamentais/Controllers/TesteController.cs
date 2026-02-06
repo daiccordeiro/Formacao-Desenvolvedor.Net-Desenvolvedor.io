@@ -15,7 +15,7 @@ namespace PrimeiraApi.Controllers
         [HttpGet("{id:int}")]
         public IActionResult Get(int id)
         {
-            return Ok(new Produto { Id = 1, Nome = "Teste" });
+            return Ok(new Produto { Id = id, Nome = "Teste" });
         }
 
         [HttpPost]
