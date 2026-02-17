@@ -101,6 +101,10 @@ namespace Application
             Console.WriteLine("Exemplo de Classes:");
             AulaClasses();
             AulaPropSomenteLeitura();
+
+            //ExemploHeranca.cs
+            Console.WriteLine("Exemplo de Herança:");
+            AulaHeranca();
         }
 
         private static void AulaClasses()
@@ -126,6 +130,19 @@ namespace Application
 
             produto.Descricao = "Mouse";            
             produto.ImprimirDescricao();                        
+        }
+
+        private static void AulaHeranca()
+        {
+            var pessoaFisica = new Cadastro.PessoaFisica();
+            pessoaFisica.Id = 1;
+            pessoaFisica.Endereco = "Endereço Teste";
+            pessoaFisica.Cidade = "Cidade Teste";
+            pessoaFisica.Cep = "12345612";
+            pessoaFisica.CPF = "12345678910";
+
+            pessoaFisica.ImprimirDados();
+            pessoaFisica.ImprimirCpf();
         }
     }
 }
