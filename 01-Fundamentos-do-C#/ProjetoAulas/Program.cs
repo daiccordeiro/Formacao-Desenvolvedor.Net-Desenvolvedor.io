@@ -105,6 +105,10 @@ namespace Application
             //ExemploHeranca.cs
             Console.WriteLine("Exemplo de Herança:");
             AulaHeranca();
+
+            //ExemploClasseSelada.cs
+            Console.WriteLine("Exemplo de Classe Selada:");
+            AulaClasseSelada();
         }
 
         private static void AulaClasses()
@@ -143,6 +147,20 @@ namespace Application
 
             pessoaFisica.ImprimirDados();
             pessoaFisica.ImprimirCpf();
+        }
+
+        private static void AulaClasseSelada()
+    {
+            /*var configuracao = new Cadastro.Configuracao();
+            configuracao.Host = "localhost";
+            */
+            
+            var configuracao = new Cadastro.Configuracao
+               {
+                  Host = "localhost"
+               };
+
+            Console.WriteLine(configuracao.Host);
         }
     }
 }
