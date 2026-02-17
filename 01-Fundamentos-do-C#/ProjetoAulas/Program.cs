@@ -109,6 +109,10 @@ namespace Application
             //ExemploClasseSelada.cs
             Console.WriteLine("Exemplo de Classe Selada:");
             AulaClasseSelada();
+
+            //ExemploClasseAbstrata.cs
+            Console.WriteLine("Exemplo de Classe Abstrata:");
+            AulaClasseAbstrata();
         }
 
         private static void AulaClasses()
@@ -150,17 +154,24 @@ namespace Application
         }
 
         private static void AulaClasseSelada()
-    {
+        {
             /*var configuracao = new Cadastro.Configuracao();
             configuracao.Host = "localhost";
             */
-            
+
             var configuracao = new Cadastro.Configuracao
                {
                   Host = "localhost"
                };
 
             Console.WriteLine(configuracao.Host);
+        }
+
+        private static void AulaClasseAbstrata()
+        {
+            var cachorro = new Cadastro.Cachorro(); 
+             cachorro.Nome = "Dog"; 
+             cachorro.ImprimirDados();
         }
     }
 }
