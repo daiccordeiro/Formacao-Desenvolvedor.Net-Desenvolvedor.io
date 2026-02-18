@@ -6,7 +6,7 @@ namespace Application
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Meu Primeiro Programa!");
+           Console.WriteLine("Meu Primeiro Programa!");
 
             //01-HandsOnCode
             //Variaveis.cs
@@ -121,6 +121,12 @@ namespace Application
             //ExemploInterface.cs
             Console.WriteLine("Exemplo de Interface:");
             AulaInterface();
+
+        
+            //06-ConversoresDeValor
+            //ExemploConversores.cs
+            Console.WriteLine("Exemplo de Conversores:");
+            AulaConversores();            
         }
 
 /* ---------------------------------------------------------------- */
@@ -216,6 +222,13 @@ namespace Application
 
             Cadastro.INotificacao notificacao = new Cadastro.NotificacaoFuncionario();
             notificacao.Notificar();
+        }
+
+        private static void AulaConversores()
+        {
+           var conversores = new Conversores.Conversor();
+           //conversores.ConvertAndParse();
+           conversores.AulaTryParse();
         }
     }
 }
