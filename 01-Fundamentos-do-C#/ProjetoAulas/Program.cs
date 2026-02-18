@@ -117,7 +117,14 @@ namespace Application
             //ExemploRecord.cs
             Console.WriteLine("Exemplo de Record:");
             AulaRecord();
+
+            //ExemploInterface.cs
+            Console.WriteLine("Exemplo de Interface:");
+            AulaInterface();
         }
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
 
         private static void AulaClasses()
         {
@@ -199,6 +206,16 @@ namespace Application
             Console.WriteLine(curso2.Descricao);
             //Console.WriteLine(curso1.Equals(curso2));
             //Console.WriteLine(curso1 == curso2);            
+        }
+
+        private static void AulaInterface()
+        {
+            var notificacaoCliente = new Cadastro.NotificacaoCliente();
+            notificacaoCliente.Notificar();
+            notificacaoCliente.NotificarOutros();
+
+            Cadastro.INotificacao notificacao = new Cadastro.NotificacaoFuncionario();
+            notificacao.Notificar();
         }
     }
 }
