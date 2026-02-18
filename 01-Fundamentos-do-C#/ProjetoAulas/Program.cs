@@ -6,7 +6,7 @@ namespace Application
     {
         static void Main(string[] args)
         {
-           Console.WriteLine("Meu Primeiro Programa!");
+            Console.WriteLine("Meu Primeiro Programa!");
 
             //01-HandsOnCode
             //Variaveis.cs
@@ -126,7 +126,13 @@ namespace Application
             //06-ConversoresDeValor
             //ExemploConversores.cs
             Console.WriteLine("Exemplo de Conversores:");
-            AulaConversores();            
+            AulaConversores();    
+
+
+            //07-TrabalhandoComStrings
+            //ExemploStrings.cs
+            Console.WriteLine("Exemplo de Strings:");
+            AulaStrings();            
         }
 
 /* ---------------------------------------------------------------- */
@@ -229,6 +235,20 @@ namespace Application
            var conversores = new Conversores.Conversor();
            //conversores.ConvertAndParse();
            conversores.AulaTryParse();
+        }
+
+        private static void AulaStrings()
+        {
+            var trabalhandoComStrings = new Strings.TrabalhandoComStrings();
+            trabalhandoComStrings.AulaToLower();            
+            trabalhandoComStrings.AulaToUpper();          
+            trabalhandoComStrings.AulaSubstring();            
+            trabalhandoComStrings.AulaRange();     
+            trabalhandoComStrings.AulaContains();
+            trabalhandoComStrings.AulaTrim();            
+            trabalhandoComStrings.AulaStartWithEndsWith();
+            trabalhandoComStrings.AulaReplace();
+            trabalhandoComStrings.AulaLength();      
         }
     }
 }
