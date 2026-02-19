@@ -139,7 +139,14 @@ namespace Application
             //ExemploDatas.cs
             Console.WriteLine("Exemplo de Datas:");
             AulaDatas();          
+
+
+            //09-TrabalhandoComExcecoes
+            //ExemploExcecoes.cs
+            Console.WriteLine("Exemplo de Exceções:");
+            AulaExcecoes();
         }
+
 
 /* ---------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
@@ -267,6 +274,13 @@ namespace Application
             trabalhandoComDatas.AulaDiaDaSemana();
             trabalhandoComDatas.AulaDateOnly();
             trabalhandoComDatas.AulaTimeOnly();
+        }
+
+        private static void AulaExcecoes()
+        {
+                var trabalhandoComExcecoes = new Excecoes.TrabalhandoComExcecoes();
+                //trabalhandoComExcecoes.AulaGerandoException();
+                trabalhandoComExcecoes.AulaTratandoException();
         }
     }
 }
