@@ -19,6 +19,24 @@ builder.Services.AddControllers()
         options.SuppressModelStateInvalidFilter = true;
     });
 
+
+//Configurando o CORS para permitir requisições de qualquer origem, método e cabeçalho
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Development", builder =>    
+                builder
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());    
+    
+    options.AddPolicy("Production", builder =>
+                builder
+                    .WithOrigins("https://localhost:9000") // Substitua pelo seu domínio de produção
+                    .WithMethods("POST")
+                    .AllowAnyHeader());
+});
+
+
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
 //builder.Services.AddSwaggerGen();
@@ -123,6 +141,11 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseCors("Development");
+}
+else
+{
+    app.UseCors("Production");
 }
 
 app.UseHttpsRedirection();
