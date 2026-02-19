@@ -6,7 +6,7 @@ namespace Application
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Meu Primeiro Programa!");
+/*            Console.WriteLine("Meu Primeiro Programa!");
 
             //01-HandsOnCode
             //Variaveis.cs
@@ -145,6 +145,12 @@ namespace Application
             //ExemploExcecoes.cs
             Console.WriteLine("Exemplo de Exceções:");
             AulaExcecoes();
+*/
+
+            //10-TrabalhandoComArquivos
+            //ExemploArquivos.cs
+            Console.WriteLine("Exemplo de Arquivos:");
+            AulaArquivos();
         }
 
 
@@ -281,6 +287,14 @@ namespace Application
                 var trabalhandoComExcecoes = new Excecoes.TrabalhandoComExcecoes();
                 //trabalhandoComExcecoes.AulaGerandoException();
                 trabalhandoComExcecoes.AulaTratandoException();
+        }
+
+        private static void AulaArquivos()
+        {
+                var trabalhandoComArquivos = new Arquivos.TrabalhandoComArquivos();
+                trabalhandoComArquivos.AulaCriandoArquivo();
+                //trabalhandoComArquivos.AulaLendoArquivo();
+                //trabalhandoComArquivos.AulaExcluindoArquivo();
         }
     }
 }
