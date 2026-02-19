@@ -132,7 +132,13 @@ namespace Application
             //07-TrabalhandoComStrings
             //ExemploStrings.cs
             Console.WriteLine("Exemplo de Strings:");
-            AulaStrings();            
+            AulaStrings();   
+
+
+            //08-TrabalhandoComDatas
+            //ExemploDatas.cs
+            Console.WriteLine("Exemplo de Datas:");
+            AulaDatas();          
         }
 
 /* ---------------------------------------------------------------- */
@@ -249,6 +255,18 @@ namespace Application
             trabalhandoComStrings.AulaStartWithEndsWith();
             trabalhandoComStrings.AulaReplace();
             trabalhandoComStrings.AulaLength();      
+        }
+
+        private static void AulaDatas()
+        {
+            var trabalhandoComDatas = new Datas.TrabalhandoComDatas();
+            trabalhandoComDatas.AulaDateTime();
+            trabalhandoComDatas.AulaSubtraindoDatas();
+            trabalhandoComDatas.AulaAdicionandoDiasMesAno();
+            trabalhandoComDatas.AulaAdicionandoHoraMinutoSegundos();
+            trabalhandoComDatas.AulaDiaDaSemana();
+            trabalhandoComDatas.AulaDateOnly();
+            trabalhandoComDatas.AulaTimeOnly();
         }
     }
 }
