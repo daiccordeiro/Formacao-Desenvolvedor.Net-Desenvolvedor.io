@@ -6,7 +6,7 @@ namespace Application
     {
         static void Main(string[] args)
         {
-/*            Console.WriteLine("Meu Primeiro Programa!");
+            Console.WriteLine("Meu Primeiro Programa!");
 
             //01-HandsOnCode
             //Variaveis.cs
@@ -152,7 +152,7 @@ namespace Application
             Console.WriteLine("Exemplo de Arquivos:");
             AulaArquivos();
 
-*/
+
             //11-TrabalhandoComLINQ
             //ExemploLINQ.cs
             Console.WriteLine("Exemplo de LINQ:");
