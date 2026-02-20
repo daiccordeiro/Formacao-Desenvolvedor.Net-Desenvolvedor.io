@@ -145,12 +145,18 @@ namespace Application
             //ExemploExcecoes.cs
             Console.WriteLine("Exemplo de Exceções:");
             AulaExcecoes();
-*/
+
 
             //10-TrabalhandoComArquivos
             //ExemploArquivos.cs
             Console.WriteLine("Exemplo de Arquivos:");
             AulaArquivos();
+
+*/
+            //11-TrabalhandoComLINQ
+            //ExemploLINQ.cs
+            Console.WriteLine("Exemplo de LINQ:");
+            AulaLINQ();
         }
 
 
@@ -295,6 +301,16 @@ namespace Application
                 trabalhandoComArquivos.AulaCriandoArquivo();
                 //trabalhandoComArquivos.AulaLendoArquivo();
                 //trabalhandoComArquivos.AulaExcluindoArquivo();
+        }
+
+        private static void AulaLINQ()
+        {
+            var trabalhandoComLinq = new Linq.TrabalhandoComLinq();
+                trabalhandoComLinq.AulaWhere();
+                trabalhandoComLinq.AulaOrdenacao();
+                trabalhandoComLinq.AulaTake();
+                trabalhandoComLinq.AulaCount();
+                trabalhandoComLinq.AulaFirstEFirstOrDefault();
         }
     }
 }
